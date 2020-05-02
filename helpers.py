@@ -10,9 +10,10 @@ def proc_row(str_series):
 
 
 def xls_kwd_search(wb,kwd):
-    
+    # not sure if this is needed
+    import xlrd
     # read in xlsx or xls
-    xls = pd.ExcelFile(path)
+    xls = pd.ExcelFile(wb)
 
     # list of sheets
     sheets = xls.sheet_names
